@@ -1,0 +1,9 @@
+streamlit
+pandas
+pdfplumber
+matplotlib
+reportlab
+google-generativeai
+python-dotenv
+sentence-transformers
+rapidfuzz
