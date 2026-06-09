@@ -1,86 +1,60 @@
 # ATS Resume Analyzer
 
-An AI-powered ATS (Applicant Tracking System) Resume Analyzer built using Streamlit, Gemini AI, and Semantic Skill Matching.
-
-The application helps candidates evaluate how well their resume matches a job description, identify missing skills, receive AI-powered feedback, generate learning roadmaps, and download detailed ATS reports.
-
----
+AI-powered ATS Resume Analyzer built using Streamlit and Google Gemini.
 
 ## Features
 
-### Resume Parsing
-- Upload resumes in PDF format
-- Extract resume text automatically
-- Detect technical skills from resume content
+* ATS Resume Score Calculation
+* Resume & Job Description Matching
+* Semantic Similarity Analysis
+* AI Resume Review using Gemini
+* Personalized Learning Roadmap
+* Resume Rewrite Suggestions
+* PDF Report Generation
+* Cloud Deployment via Streamlit
 
-### Job Description Analysis
-- Extract required skills from job descriptions
-- Compare resume skills against job requirements
+## Screenshots
 
-### Semantic Skill Matching
-- Uses Sentence Transformers and RapidFuzz
-- Detects related skills even when exact keywords differ
-- Improves ATS score accuracy compared to keyword-only matching
+### Home Page
 
-### ATS Score Calculation
-- Calculates resume-job compatibility score
-- Visual progress indicator
-- Skill match statistics dashboard
+![Home](screenshots/home.png)
 
-### AI-Powered Resume Review
-Using Google Gemini AI:
-- Strengths Analysis
-- Weaknesses Analysis
-- Improvement Suggestions
+### ATS Analysis
 
-### AI Learning Roadmap
-Generates personalized learning plans for missing skills:
-- Skill Overview
-- Importance
-- Key Topics
-- Mini Project Ideas
+![ATS Score](screenshots/ats_score.png)
 
-### Resume Rewrite Suggestions
-- ATS-friendly bullet points
-- Missing skill integration
-- Professional resume enhancement suggestions
+### AI Review
 
-### PDF Report Generation
-Download a complete ATS analysis report including:
-- ATS Score
-- Matched Skills
-- Missing Skills
-- AI Review
-- Learning Roadmap
-- Resume Suggestions
+![AI Review](screenshots/ai_review.png)
 
----
+### PDF Report
+
+![Report](screenshots/report.png)
 
 ## Tech Stack
 
-- Python
-- Streamlit
-- Pandas
-- PDFPlumber
-- Google Gemini API
-- Sentence Transformers
-- RapidFuzz
-- Matplotlib
-- ReportLab
+* Python
+* Streamlit
+* Google Gemini API
+* Sentence Transformers
+* Pandas
+* RapidFuzz
+* ReportLab
+* PDFPlumber
 
----
+## Installation
 
-## Project Structure
+```bash
+git clone https://github.com/sjgupta195-cloud/ATS-Resume-Analyzer.git
+cd ATS-Resume-Analyzer
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-```text
-ATS-Resume-Analyzer/
-│
-├── app.py
-├── smart_match.py
-├── gemini_helper.py
-├── report_generator.py
-├── config.py
-├── skills.csv
-├── requirements.txt
-├── .gitignore
-└── README.md
+## Deployment
+
+Deployed on Streamlit Cloud.
+
+## Author
+
+Suraj Gupta
