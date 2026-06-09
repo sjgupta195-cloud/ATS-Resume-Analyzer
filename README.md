@@ -1,6 +1,8 @@
 # ATS Resume Analyzer
 
-AI-powered ATS Resume Analyzer built using Streamlit and Google Gemini.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ats-resume-analyzer-hrhv8e5yryqtm2an4jzplp.streamlit.app)
+
+AI-powered ATS Resume Analyzer built using Streamlit and Google Gemini API.
 
 ## Features
 
