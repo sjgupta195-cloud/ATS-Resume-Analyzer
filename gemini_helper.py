@@ -14,22 +14,13 @@ model = genai.GenerativeModel(
 
 def get_resume_feedback(prompt):
 
-    response = model.generate_content(
-        prompt
-    )
-
-    return response.text
-
-
 
     try:
         response = model.generate_content(prompt)
         return response.text
-
     except ResourceExhausted:
-        return """
+        return """   
 ❌ Gemini API quota exceeded.
+Please try again later or use a new API key.    """
 
-Please try again later or use a new API key.
-"""
-
+    
