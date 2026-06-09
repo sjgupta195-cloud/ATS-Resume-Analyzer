@@ -2,6 +2,7 @@ import google.generativeai as genai
 from config import API_KEY
 from dotenv import load_dotenv
 load_dotenv()
+from google.api_core.exceptions import ResourceExhausted
 
 genai.configure(
     api_key=API_KEY
@@ -20,9 +21,7 @@ def get_resume_feedback(prompt):
     return response.text
 
 
-from google.api_core.exceptions import ResourceExhausted
 
-def get_resume_feedback(prompt):
     try:
         response = model.generate_content(prompt)
         return response.text
